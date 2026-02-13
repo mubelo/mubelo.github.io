@@ -96,22 +96,92 @@ iframe {
     margin-top: 20px;
 }
 
-/* STAFF CARD */
+/* STAFF CARD CONTAINER */
 .card-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 40px 15px;       /* Add padding for mobile */
+    min-height: 100vh;        /* Ensure full height */
+    box-sizing: border-box;
 }
 
+/* STAFF CARD */
 .card {
     background: white;
     color: var(--dark);
-    width: 90%;
-    max-width: 420px;
+    width: 100%;              /* Full width on mobile */
+    max-width: 400px;         /* Limit width on desktop */
     border-radius: 20px;
     padding: 30px 20px;
     text-align: center;
     box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-    animation: fadeIn 1s ease-in-out
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* STAFF IMAGE */
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;       /* Circle profile image */
+    margin-bottom: 15px;
+}
+
+/* STAFF NAME & POSITION */
+.card h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+/* CONTACT BUTTONS inside staff pages */
+.card .button {
+    width: 100%;              /* Full width for mobile */
+    padding: 12px 0;
+    margin: 8px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+/* BACK LINK */
+.back {
+    display: block;
+    margin-top: 15px;
+    color: var(--primary);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media(max-width:600px){
+    .card {
+        padding: 25px 15px;
+    }
+    .card img {
+        width: 90px;
+        height: 90px;
+    }
+    .card h1 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    .card .button {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
 
