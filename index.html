@@ -4,35 +4,74 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mubelo Electrical Ltd</title>
+
 <link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
-/* Social buttons */
+/* Social Icons Section */
 .social-container {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-.social-button {
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 8px;
-    border-radius: 8px;
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 24px;
     color: white;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
+/* Brand Colors */
 .facebook { background: #1877f2; }
 .instagram { 
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
 }
 .linkedin { background: #0077b5; }
 
-.social-button:hover {
-    transform: translateY(-3px);
-    opacity: 0.9;
+/* Hover Animation */
+.social-icon:hover {
+    transform: scale(1.15) rotate(8deg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    animation: pulse 2s infinite;
+    z-index: 999;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+    70% { box-shadow: 0 0 0 20px rgba(37,211,102,0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
 
 </style>
@@ -56,27 +95,27 @@
 
 <a href="https://wa.me/2306985200" class="button">WhatsApp Company</a>
 
-<!-- Social Media Section -->
+<!-- SOCIAL MEDIA ICONS -->
 <h2>Follow Us</h2>
 
 <div class="social-container">
 
 <a href="https://www.facebook.com/mubelo.electrical/" 
-   class="social-button facebook" 
-   target="_blank">
-   Facebook
+   target="_blank" 
+   class="social-icon facebook">
+   <i class="fab fa-facebook-f"></i>
 </a>
 
 <a href="https://www.instagram.com/mubelo_electrical_ltd/" 
-   class="social-button instagram" 
-   target="_blank">
-   Instagram
+   target="_blank" 
+   class="social-icon instagram">
+   <i class="fab fa-instagram"></i>
 </a>
 
 <a href="https://www.linkedin.com/company/mubelo-electrical-ltd/" 
-   class="social-button linkedin" 
-   target="_blank">
-   LinkedIn
+   target="_blank" 
+   class="social-icon linkedin">
+   <i class="fab fa-linkedin-in"></i>
 </a>
 
 </div>
@@ -97,5 +136,13 @@
 
 </div>
 
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/2306985200" 
+   class="whatsapp-float" 
+   target="_blank">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
 </body>
 </html>
+
