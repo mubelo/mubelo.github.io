@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Dupuche;Richard;;;
+FN:Richard Dupuche
+ORG:Mubelo Electrical Ltd
+TITLE:Managing Director
+TEL;TYPE=WORK,VOICE:+23054986410
+EMAIL;TYPE=WORK:richard.d@mubelo.mu
+END:VCARD
