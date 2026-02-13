@@ -1,137 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mubelo Electrical Ltd | Sunbot Engineering Services Ltd</title>
-  <style>
-    /* Full-page background image with overlay */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-      min-height: 100vh;
-      position: relative;
-      overflow-x: hidden;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-
-    /* Overlay to darken background for readability */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.6); /* adjust opacity as needed */
-      z-index: -1;
-    }
-
-    /* Container for content */
-    .container {
-      max-width: 800px;
-      padding: 20px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-
-    img.logo {
-      width: 200px;
-      margin: 40px auto 20px;
-      display: block;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
-      background: white;
-      padding: 10px;
-    }
-
-    h1, h2 {
-      margin: 10px 0;
-      font-weight: 700;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-    }
-
-    p {
-      margin: 8px 0;
-      font-size: 1.1rem;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-    }
-
-    a {
-      color: #cce7ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      color: #e6f3ff;
-      text-decoration: underline;
-    }
-
-    .button {
-      background-color: #28a745;
-      color: white;
-      padding: 12px 28px;
-      border-radius: 6px;
-      font-size: 1.1rem;
-      text-decoration: none;
-      display: inline-block;
-      margin: 20px 10px;
-      box-shadow: 0 4px 10px rgba(0, 128, 0, 0.7);
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #218838;
-    }
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-      margin-top: 20px;
-    }
-
-    .team-links p {
-      margin: 10px 0;
-    }
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mubelo Electrical Ltd</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
 
-    <img src="logo.png" alt="Company Logo" class="logo" />
+<div class="container">
 
-    <h1>Mubelo Electrical Ltd</h1>
-    <h2>Sunbot Engineering Services Ltd</h2>
+<img src="logo.png" class="logo">
 
-    <p><strong>Address:</strong> THE CUBICLE, Royal Road, Phoenix, Mauritius</p>
-    <p><strong>Phone:</strong> <a href="tel:+2306985200">698 5200</a></p>
-    <p><strong>Email:</strong> <a href="mailto:info@mubelo.mu">info@mubelo.mu</a></p>
+<h1>Mubelo Electrical Ltd</h1>
+<h2>Sunbot Engineering Services Ltd</h2>
 
-    <a href="https://wa.me/2306985200" class="button" target="_blank" rel="noopener noreferrer">
-      WhatsApp Company
-    </a>
+<div class="info">
+<p>📍 THE CUBICLE, Royal Road, Phoenix</p>
+<p>📞 <a href="tel:+2306985200" style="color:white;">698 5200</a></p>
+<p>📧 <a href="mailto:info@mubelo.mu" style="color:white;">info@mubelo.mu</a></p>
+</div>
 
-    <h2>Find Us on Google Maps</h2>
-    <iframe 
-      src="https://www.google.com/maps?q=THE+CUBICLE,+Royal+Road,+Phoenix,+Mauritius&output=embed" 
-      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+<a href="https://wa.me/2306985200" class="button">WhatsApp Company</a>
 
-    <h2>Our Team</h2>
-    <div class="team-links">
-      <p><a href="/richard" class="button">Richard Dupuche</a></p>
-      <p><a href="/twinkish" class="button">Twinkish Dauhoo</a></p>
-      <p><a href="/vanisha" class="button">Vanisha Jagutpal</a></p>
-      <p><a href="/fleurette" class="button">Fleurette Bosquet</a></p>
-      <p><a href="/willem" class="button">Willem Emile</a></p>
-    </div>
+<h2>Find Us</h2>
+<iframe src="https://www.google.com/maps?q=THE+CUBICLE,+Royal+Road,+Phoenix,+Mauritius&output=embed"></iframe>
 
-  </div>
+<h2>Our Team</h2>
+
+<div class="team-grid">
+<a href="/richard" class="button">Richard Dupuche</a>
+<a href="/twinkish" class="button">Twinkish Dauhoo</a>
+<a href="/vanisha" class="button">Vanisha Jagutpal</a>
+<a href="/fleurette" class="button">Fleurette Bosquet</a>
+<a href="/willem" class="button">Willem Emile</a>
+</div>
+
+</div>
 </body>
 </html>
