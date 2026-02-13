@@ -3,20 +3,26 @@
 <head>
   <title>Mubelo Electrical Ltd | Sunbot Engineering Services Ltd</title>
   <style>
-    body { font-family: Arial; text-align: center; }
-    img { width: 200px; }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px;
-      background: white;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  /* Background image */
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* black transparent overlay */
+  z-index: -1;
+}
 
   <img src="logo.png" alt="Company Logo">
 
