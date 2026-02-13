@@ -61,6 +61,15 @@ h2 {
     font-size: 16px;
 }
 
+/* Company WhatsApp Button - Darker Green */
+.card .button.whatsapp-company {
+    background-color: #00BFA5;
+    color: white;
+}
+.card .button.whatsapp-company:hover {
+    background-color: #009E8F;
+    transform: translateY(-3px);
+}
 /* BUTTON STYLE - STAFF BUTTONS ORANGE */
 .button {
     display: inline-block;
@@ -146,7 +155,9 @@ iframe {
 }
 
 /* CONTACT BUTTONS inside staff pages */
-.card .button {
+.card .button.whatsapp-personal {
+    background-color: #25D366;
+    color: white;
     width: 100%;              /* Full width for mobile */
     padding: 12px 0;
     margin: 8px 0;
