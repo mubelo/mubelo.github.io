@@ -42,13 +42,50 @@
     transform: scale(1.15) rotate(8deg);
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
+   /* SAVE CONTACT BUTTON - ORANGE */
+.button.save-contact {
+    background: #FF7A00;   /* Orange */
+    color: white;
+    padding: 12px 26px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    transition: 0.3s ease;
+}
 
-/* Floating WhatsApp Button */
+.button.save-contact:hover {
+    background: #E66900;   /* Darker orange on hover */
+    transform: translateY(-3px);
+}
+
+/* STAFF WHATSAPP BUTTON - GREEN */
+.button.whatsapp-staff {
+    background: #25D366;  /* Green */
+    color: white;
+    padding: 12px 26px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.button.whatsapp-staff:hover {
+    background: #1DA851;  /* Slightly darker green */
+    transform: translateY(-3px);
+}
+
+/* FLOATING WHATSAPP BUTTON */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #25D366;
+    background: #25D366;  /* Green */
     color: white;
     font-size: 28px;
     width: 60px;
@@ -60,7 +97,6 @@
     text-decoration: none;
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     animation: pulse 2s infinite;
-    z-index: 999;
 }
 
 .whatsapp-float:hover {
