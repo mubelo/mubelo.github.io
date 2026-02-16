@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
 :root {
-    --primary: #0057D9;   /* Electric Blue */
-    --accent: #FF7A00;    /* Orange Accent */
-    --dark: #0A1F44;      /* Deep Navy */
-    --light: #F4F7FB;     /* Soft White */
+    --primary: #0057D9;
+    --accent: #00C851;
+    --dark: #0A1F44;
+    --light: #F4F7FB;
 }
 
 * {
@@ -61,19 +61,10 @@ h2 {
     font-size: 16px;
 }
 
-/* Company WhatsApp Button - Darker Green */
-.card .button.whatsapp-company {
-    background-color: #00BFA5;
-    color: white;
-}
-.card .button.whatsapp-company:hover {
-    background-color: #009E8F;
-    transform: translateY(-3px);
-}
-/* BUTTON STYLE - STAFF BUTTONS ORANGE */
+/* BUTTON STYLE */
 .button {
     display: inline-block;
-    background: var(--accent);   /* Orange */
+    background: var(--accent);
     color: white;
     padding: 12px 26px;
     margin: 10px;
@@ -84,7 +75,7 @@ h2 {
 }
 
 .button:hover {
-    background: #E66900;   /* Darker Orange on hover */
+    background: #009e3f;
     transform: translateY(-3px);
 }
 
@@ -105,22 +96,19 @@ iframe {
     margin-top: 20px;
 }
 
-/* STAFF CARD CONTAINER */
+/* STAFF CARD */
 .card-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 15px;       /* Add padding for mobile */
-    min-height: 100vh;        /* Ensure full height */
-    box-sizing: border-box;
+    height: 100vh;
 }
 
-/* STAFF CARD */
 .card {
     background: white;
     color: var(--dark);
-    width: 100%;              /* Full width on mobile */
-    max-width: 400px;         /* Limit width on desktop */
+    width: 90%;
+    max-width: 420px;
     border-radius: 20px;
     padding: 30px 20px;
     text-align: center;
@@ -128,16 +116,11 @@ iframe {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* STAFF IMAGE */
 .card img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;       /* Circle profile image */
+    width: 120px;
     margin-bottom: 15px;
 }
 
-/* STAFF NAME & POSITION */
 .card h1 {
     font-size: 22px;
     margin-bottom: 5px;
@@ -146,23 +129,10 @@ iframe {
 .card h3 {
     color: var(--primary);
     margin-bottom: 10px;
-    font-weight: 600;
 }
 
 .card p {
     margin: 6px 0;
-    font-size: 16px;
-}
-
-/* CONTACT BUTTONS inside staff pages */
-.card .button.whatsapp-personal {
-    background-color: #25D366;
-    color: white;
-    width: 100%;              /* Full width for mobile */
-    padding: 12px 0;
-    margin: 8px 0;
-    font-size: 16px;
-    border-radius: 10px;
 }
 
 /* BACK LINK */
@@ -174,25 +144,39 @@ iframe {
     text-decoration: none;
 }
 
-/* MOBILE ADJUSTMENTS */
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--accent);
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0,200,81,0.6); }
+    70% { box-shadow: 0 0 0 20px rgba(0,200,81,0); }
+    100% { box-shadow: 0 0 0 0 rgba(0,200,81,0); }
+}
+
+@keyframes fadeIn {
+    from { opacity:0; transform: translateY(20px);}
+    to { opacity:1; transform: translateY(0);}
+}
+
+/* MOBILE */
 @media(max-width:600px){
-    .card {
-        padding: 25px 15px;
-    }
-    .card img {
-        width: 90px;
-        height: 90px;
-    }
-    .card h1 {
-        font-size: 20px;
-    }
-    .card p {
-        font-size: 14px;
-    }
-    .card .button {
-        font-size: 14px;
-        padding: 10px 0;
-    }
+    h1 { font-size: 24px; }
 }
 
 
