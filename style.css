@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
 :root {
-    --primary: #0057D9;
-    --accent: #00C851;
-    --dark: #0A1F44;
-    --light: #F4F7FB;
+    --primary: #0057D9;   /* Electric Blue */
+    --accent: #FF7A00;    /* Orange Accent */
+    --dark: #0A1F44;      /* Deep Navy */
+    --light: #F4F7FB;     /* Soft White */
 }
 
 * {
@@ -61,10 +61,10 @@ h2 {
     font-size: 16px;
 }
 
-/* BUTTON STYLE */
+/* BUTTON STYLE - STAFF BUTTONS ORANGE */
 .button {
     display: inline-block;
-    background: var(--accent);
+    background: var(--accent);   /* Orange */
     color: white;
     padding: 12px 26px;
     margin: 10px;
@@ -75,7 +75,7 @@ h2 {
 }
 
 .button:hover {
-    background: #009e3f;
+    background: #E66900;   /* Darker Orange on hover */
     transform: translateY(-3px);
 }
 
@@ -144,12 +144,41 @@ iframe {
     text-decoration: none;
 }
 
+/* SOCIAL ICONS */
+.social-container {
+    margin-top: 25px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* Social colors */
+.facebook { background: #1877f2; }
+.instagram { background: #FF5F6D; }  /* Slight gradient pink/orange for Instagram */
+.linkedin { background: #0077b5; }
+
+/* Hover Animation */
+.social-icon:hover {
+    transform: scale(1.15) rotate(8deg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
 /* FLOATING WHATSAPP */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: var(--accent);
+    background: #25D366;
     color: white;
     font-size: 28px;
     width: 60px;
@@ -163,10 +192,14 @@ iframe {
     animation: pulse 2s infinite;
 }
 
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
 @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(0,200,81,0.6); }
-    70% { box-shadow: 0 0 0 20px rgba(0,200,81,0); }
-    100% { box-shadow: 0 0 0 0 rgba(0,200,81,0); }
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+    70% { box-shadow: 0 0 0 20px rgba(37,211,102,0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
 
 @keyframes fadeIn {
@@ -178,5 +211,3 @@ iframe {
 @media(max-width:600px){
     h1 { font-size: 24px; }
 }
-
-
